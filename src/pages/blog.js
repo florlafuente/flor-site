@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const BlogPage = () => (
   <div>
     Blog
   </div>
