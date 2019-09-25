@@ -33,6 +33,7 @@ export const PostWrapper = styled.article`
 
   & > figure > img {
     max-width: 500px;
+   object-fit: contain;
   }
 
   & > p > a, & > blockquote > a {
