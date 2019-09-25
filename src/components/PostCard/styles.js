@@ -1,5 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+`
 
 export const CardWrapper = styled.div`
   align-items: flex-end;
@@ -49,6 +54,7 @@ export const Title = styled.div`
   font-weight: 500;
   letter-spacing: 3.5px;
   line-height: 1.5;
+  text-decoration: none;
   text-transform: uppercase;
   z-index: 2;
 `
