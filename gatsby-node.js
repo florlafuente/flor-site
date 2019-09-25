@@ -10,7 +10,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const PostTemplate = path.resolve("./src/templates/Post")
+  const PostTemplate = path.resolve("./src/templates/Post/index.js")
 
   return graphql(
     `query GetAllPosts {
@@ -18,30 +18,26 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             slug,
-            id,
-            title,
-            content
+            id
           }
         }
       }
     }
     `
-  ).then(result => {
+  )
+  .then(result => {
     if (result.errors) {
       throw result.errors
     }
 
     // Create blog posts pages.
-    const posts = result.data.allMediumFeed.edges
-    posts.forEach(post => {
+    const Posts = result.data.allMediumFeed.edges
+    Posts.forEach(post => {
       createPage({
         path: `/post/${post.node.slug}`,
         component: PostTemplate,
         context: {
-          id: post.node.id,
-          slug: post.node.slug,
-          title: post.node.title,
-          content: post.node.content
+          id: post.node.id
         },
       })
     })
