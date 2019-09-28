@@ -53,3 +53,9 @@ export const PostWrapper = styled.article`
     margin-top: 10px;
   }
 `
+
+export const Date = styled.div`
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+`

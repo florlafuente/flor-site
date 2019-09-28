@@ -2,13 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Title from "../../components/Title"
-import  { PostWrapper, StyledLink } from "./styles"
+import  { PostWrapper, StyledLink, Date } from "./styles"
 
 const PostPage =  ({ data: { mediumFeed: { title, content, date } } }) => {
   const createMarkup = () => ({__html: content })
   return (
     <Layout>
       <Title>{ title }</Title>
+      <Date>{date}</Date>
       <PostWrapper dangerouslySetInnerHTML={createMarkup()} />
       <div style={{ padding: '20px 0' }}>
         <StyledLink to="/">← Volver</StyledLink>
