@@ -14,13 +14,12 @@ export const CardWrapper = styled.div`
   flex-direction: row;
   height: 300px;
   margin: 40px auto;
-  padding: 30px;
   position: relative;
   width: 300px;
 `
 
 export const ThumbnailImg = styled.img`
-  border-radius: 5px;
+  border-radius: 2px;
   height: auto;
   overflow: hidden;
   opacity: 0.7;
@@ -31,7 +30,7 @@ export const ThumbnailImg = styled.img`
 
 export const CardBg = styled.div`
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border-radius: 5px;
+  border-radius: 2px;
   bottom: 0;
   background: linear-gradient(to left, #5FC3E4, #E55D87);
   opacity: 0.7;
@@ -48,13 +47,17 @@ export const CardBg = styled.div`
 `
 
 export const Title = styled.div`
+  background-color: white;
   color: black;
   font-family: 'Poppins', sans-serif;
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 3.5px;
   line-height: 1.5;
+  padding: 20px 30px;
+  pointer-events: none;
   text-decoration: none;
   text-transform: uppercase;
+  width: 100%;
   z-index: 2;
 `
