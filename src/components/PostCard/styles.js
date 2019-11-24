@@ -16,6 +16,11 @@ export const CardWrapper = styled.div`
   margin: 40px auto;
   position: relative;
   width: 300px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 `
 
 export const ThumbnailImg = styled.img`
