@@ -4,11 +4,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
 import PostCard from "../components/PostCard"
+import NavBar from "../components/NavBar"
 
 const IndexPage =  ({ data }) => {
   const posts = data.allMediumFeed.edges
   return (
     <Layout>
+      <NavBar />
       <Title>Un bosque de bolsillo</Title>
       <div>
         {posts.map((post) => (
