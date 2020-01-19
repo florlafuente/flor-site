@@ -11,7 +11,7 @@ const PostPage =  ({ data: { mediumFeed: { title, content, date } } }) => {
       <Title>{ title }</Title>
       <Date>{date}</Date>
       <PostWrapper dangerouslySetInnerHTML={createMarkup()} />
-      <div style={{ padding: '20px 0' }}>
+      <div style={{ padding: '20px 0', 'textAlign': 'center' }}>
         <StyledLink to="/">← Volver</StyledLink>
       </div>
     </Layout>

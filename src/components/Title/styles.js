@@ -8,6 +8,8 @@ export const StyledTitle = styled.h1`
   font-weight: 500;
   letter-spacing: 3.5px;
   line-height: 1.5;
+  max-width: 500px;
+  margin: 0 auto;
   padding-bottom: 3px;
   text-transform: uppercase;
   text-align: center;

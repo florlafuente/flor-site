@@ -20,6 +20,7 @@ export const PostWrapper = styled.article`
   font-style: normal;
   font-weight: 300;
   line-height: 2;
+  margin: 0 auto;
   max-width: 500px;
   padding: 9px 0 3px;
   width: 100%;

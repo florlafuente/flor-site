@@ -13,7 +13,7 @@ export const CardWrapper = styled.div`
   display: flex;
   flex-direction: row;
   height: 300px;
-  margin: 40px auto;
+  margin: 40px auto 0;
   position: relative;
   width: 300px;
   transition: transform 0.5s ease;
